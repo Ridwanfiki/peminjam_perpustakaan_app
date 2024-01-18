@@ -41,7 +41,7 @@ class PeminjamanController extends GetxController with StateMixin<List<DataPinja
           change(responsePinjam.data, status: RxStatus.success());
         }
       } else {
-        change(null, status: RxStatus.error("Gagal mengambil data"));
+        change(null, status: RxStatus.error("Gagall mengambil data"));
       }
     } on DioException catch (e) {
       change(null, status: RxStatus.error("Error ${e.message}"));
